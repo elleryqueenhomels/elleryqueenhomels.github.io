@@ -199,7 +199,8 @@ function preprocess(imgData) {
         let tensor = tf.fromPixels(imgData, numChannels = 1)
         
         //resize 
-        const resized = tf.image.resizeBilinear(tensor, [28, 28]).toFloat()
+        //const resized = tf.image.resizeBilinear(tensor, [28, 28]).toFloat()
+        const resized = tf.image.resizeNearestNeighbor(tensor, [28, 28]).toFloat()
         
         //normalize 
         const offset = tf.scalar(255.0);
