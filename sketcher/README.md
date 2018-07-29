@@ -1,8 +1,6 @@
-# Sketcher 
+# Google Sketcher 
 
-## Project Description 
+## Description 
 
-* Train on google colab using sketcher.ipynb and convert the model to web format then save to the model 
-* Make inference on the browser using TensorFlow.js 
-
-
+- This is a frontend demo leveraging TensorflowJS to do inference on web side.
+- Backend model design and training can be found [here](https://github.com/elleryqueenhomels/google_sketcher).
